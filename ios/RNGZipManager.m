@@ -34,16 +34,10 @@ RCT_REMAP_METHOD(gunzip,
         }
     }
     //Write the file on filesystem
-    if (![[NSFileManager defaultManager] createFileAtPath:dest contents:[DCTar decompressData:[manager contentsAtPath:source] attributes:nil]) {
+    if (![manager createFileAtPath:dest contents:[DCTar gzipDecompress:[manager contentsAtPath:source]] attributes:nil]) {
         reject(@"-3", @"error while decompressing", nil);
         return;
     }
-
-    // TODO Passing an error here results in EXC_BAD_ACCESS because the error is released
-//    if (![DCTar decompressData:[manager contentsAtPath:source] toPath:folder error:nil]) {
-//        reject(@"-3", @"error while decompressing", nil);
-//        return;
-//    }
 
     resolve(@{@"path": folder});
 }
