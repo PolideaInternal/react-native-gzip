@@ -39,7 +39,7 @@ RCT_REMAP_METHOD(gunzip,
         return;
     }
 
-    resolve(@{@"path": folder});
+    resolve(@{@"path": dest});
 }
 
 @end
