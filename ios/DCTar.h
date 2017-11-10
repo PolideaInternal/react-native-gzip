@@ -23,7 +23,7 @@
  @param: error is used to report back if an error happened.
  @return if the compression was successful or not.
  */
-+(BOOL)compressFileAtPath:(NSString*)filePath toPath:(NSString*)toPath error:(NSError**)error;
+//+(BOOL)compressFileAtPath:(NSString*)filePath toPath:(NSString*)toPath error:(NSError**)error;
 
 /**
  Create a gzipped tar file from a data blob.
@@ -41,7 +41,7 @@
  @param: error is used to report back if an error happened.
  @return if the decompression was successful or not.
  */
-+(BOOL)decompressFileAtPath:(NSString*)filePath toPath:(NSString*)path error:(NSError**)error;
+//+(BOOL)decompressFileAtPath:(NSString*)filePath toPath:(NSString*)path error:(NSError**)error;
 
 /**
  decompress a tar or gzipped tar (.tar or tar.giz) file.
@@ -50,7 +50,7 @@
  @param: error is used to report back if an error happened.
  @return if the decompression was successful or not.
  */
-+(BOOL)decompressData:(NSData*)data toPath:(NSString*)path error:(NSError**)error;
+//+(BOOL)decompressData:(NSData*)data toPath:(NSString*)path error:(NSError**)error;
 
 /**
  Create a tar file (no gzipping) from a file or directory.
@@ -59,7 +59,7 @@
  @param: error is used to report back if an error happened.
  @return if the compression was successful or not.
  */
-+(BOOL)tarFileAtPath:(NSString*)tarFilePath toPath:(NSString*)path error:(NSError**)error;
+//+(BOOL)tarFileAtPath:(NSString*)tarFilePath toPath:(NSString*)path error:(NSError**)error;
 
 /**
  decompress a tar file.
@@ -68,7 +68,7 @@
  @param: error is used to report back if an error happened.
  @return if the decompression was successful or not.
  */
-+(BOOL)untarFileAtPath:(NSString*)tarFilePath toPath:(NSString*)path error:(NSError**)error;
+//+(BOOL)untarFileAtPath:(NSString*)tarFilePath toPath:(NSString*)path error:(NSError**)error;
 
 /**
  Create a tar file (not gzipped) from a data blob.
@@ -86,7 +86,7 @@
  @param: error is used to report back if an error happened.
  @return if the decompression was successful or not.
  */
-+(BOOL)untarData:(NSData*)tarData toPath:(NSString*)path error:(NSError**)error;
+//+(BOOL)untarData:(NSData*)tarData toPath:(NSString*)path error:(NSError**)error;
 
 /**
  gzipped some data.
@@ -109,7 +109,7 @@
  @param: error is used to report back if an error happened.
  @return if the compression was successful or not.
  */
-+(BOOL)gzipDecompress:(NSString*)filePath toPath:(NSString*)toPath error:(NSError**)error;
+//+(BOOL)gzipDecompress:(NSString*)filePath toPath:(NSString*)toPath error:(NSError**)error;
 
 /**
  decompress a zlib data blob.
